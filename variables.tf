@@ -78,9 +78,9 @@ variable "ecs_capacity_provider_type" {
 }
 
 variable "ecs_docker_image_url" {
-  description = "An URL to the Docker image used by the application"
+  description = "A URL to the Docker image used by the application"
   type        = string
-  default     = "toroio/martini-runtime:latest"
+  default     = "lontiplatform/martini-server-runtime:latest"
 }
 
 // Logs configuration
