@@ -16,7 +16,7 @@ variable "tags" {
 
   default = {
     Application = "Martini"
-    Repository  = "https://github.com/torocloud/martini-aws-terraform-template"
+    Repository  = "https://github.com/lontiplatform/martini-aws-terraform-template"
   }
 }
 
