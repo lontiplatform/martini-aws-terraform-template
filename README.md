@@ -107,7 +107,7 @@ run a few checks before the commit. The checks used are (in order of execution):
 | <a name="input_ecs_asg_instance_type"></a> [ecs\_asg\_instance\_type](#input\_ecs\_asg\_instance\_type) | Instance type to use for the underlying instances. Valid only if `ecs_capacity_provider_type` is set to `EC2` | `string` | `null` | no |
 | <a name="input_ecs_asg_max_size"></a> [ecs\_asg\_max\_size](#input\_ecs\_asg\_max\_size) | A maximum size for the AutoScaling Group that handles the ECS cluster. Valid only if `ecs_capacity_provider_type` is set to `EC2` | `number` | `1` | no |
 | <a name="input_ecs_capacity_provider_type"></a> [ecs\_capacity\_provider\_type](#input\_ecs\_capacity\_provider\_type) | A type of a capacity provider that should be used by the ECS cluster | `string` | n/a | yes |
-| <a name="input_ecs_docker_image_url"></a> [ecs\_docker\_image\_url](#input\_ecs\_docker\_image\_url) | An URL to the Docker image used by the application | `string` | `"toroio/martini-runtime:latest"` | no |
+| <a name="input_ecs_docker_image_url"></a> [ecs\_docker\_image\_url](#input\_ecs\_docker\_image\_url) | An URL to the Docker image used by the application | `string` | `"lontiplatform/martini-server-runtime:latest"` | no |
 | <a name="input_enable_amazonmq"></a> [enable\_amazonmq](#input\_enable\_amazonmq) | Should Martini use Amazon MQ message broker? | `bool` | `false` | no |
 | <a name="input_enable_rds"></a> [enable\_rds](#input\_enable\_rds) | Should Martini use RDS database? | `bool` | `false` | no |
 | <a name="input_enable_sqs"></a> [enable\_sqs](#input\_enable\_sqs) | Should Martini use SQS message broker? | `bool` | `false` | no |
@@ -122,7 +122,7 @@ run a few checks before the commit. The checks used are (in order of execution):
 | <a name="input_rds_engine_version"></a> [rds\_engine\_version](#input\_rds\_engine\_version) | The RDS engine version to use. Valid only if `enable_rds` is set to `true` | `string` | `null` | no |
 | <a name="input_rds_instance_class"></a> [rds\_instance\_class](#input\_rds\_instance\_class) | An instance class to use by the RDS instance. Valid only if `enable_rds` is set to `true` | `string` | `"db.t4g.medium"` | no |
 | <a name="input_rds_username"></a> [rds\_username](#input\_rds\_username) | Username to set in the RDS instance. Valid only if `enable_rds` is set to `true` | `string` | `null` | no |
-| <a name="input_tags"></a> [tags](#input\_tags) | Common tags for components created in the infrastructure | `map(string)` | <pre>{<br>  "Application": "Martini",<br>  "Repository": "https://github.com/torocloud/martini-terraform-template"<br>}</pre> | no |
+| <a name="input_tags"></a> [tags](#input\_tags) | Common tags for components created in the infrastructure | `map(string)` | <pre>{<br>  "Application": "Martini",<br>  "Repository": "https://github.com/lontiplatform/martini-aws-terraform-template"<br>}</pre> | no |
 
 ## Outputs
 
